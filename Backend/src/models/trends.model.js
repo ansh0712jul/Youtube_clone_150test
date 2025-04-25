@@ -1,4 +1,7 @@
 import mongoose from "mongoose";
+import validator from "validator";
+
+// trends Schema 
 
 const TrendingData = new mongoose.Schema({
     email: {
@@ -52,6 +55,7 @@ const TrendingData = new mongoose.Schema({
     },
   });
   
-  const TrendingDataModel = mongoose.model("TrendingData", TrendingData);
-  
+
+// model for trending data
+const TrendingDataModel = mongoose.model("TrendingData", TrendingData);  
 export default TrendingDataModel;  
