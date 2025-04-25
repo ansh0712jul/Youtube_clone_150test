@@ -7,6 +7,8 @@ const router = Router()
 
 router.route("/sign-up").post( registerUser);
 router.route("/sign-in").post(loginUser);
+// protected route
+
 router.route("/logout").post(verifyJwt , logoutUser);
 
 
